@@ -9,6 +9,7 @@ export default function App() {
           <a
             href="https://github.com/Win-PaSandar/react-weather-app"
             target="_blank"
+            rel="noreferrer"
           >
             Open-source code
           </a>{" "}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
+import FormattedTime from "./FormattedTime";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -12,10 +14,10 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
-      icon_url: response.data.condition.icon_url,
+      iconUrl: response.data.condition.icon_url,
       city: response.data.city,
-      currentDate: "Sunday",
-      currentTime: "16:11",
+      date: new Date(response.data.time * 1000),
+      time: new Date(response.data.time * 1000),
     });
   }
 
@@ -56,15 +58,19 @@ export default function Weather(props) {
               {weatherData.city}
             </h1>
             <ul className="today">
-              <li className="current-date">{weatherData.currentDate}</li>
-              <li className="current-time">{weatherData.currentTime}</li>
+              <li className="current-date">
+                <FormattedDate date={weatherData.date} />
+              </li>
+              <li className="current-time">
+                <FormattedTime time={weatherData.time} />
+              </li>
             </ul>
           </div>
 
           <div className="col-4">
             <div className="current-weather">
               <img
-                src={weatherData.icon_url}
+                src={weatherData.iconUrl}
                 alt={weatherData.description}
                 class="today-weather-icon"
                 id="icon"

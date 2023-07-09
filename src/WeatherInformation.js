@@ -3,9 +3,9 @@ import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
 
-export default function WeatherInfo(props) {
+export default function WeatherInformation(props) {
   return (
-    <div className="weatherInfo">
+    <div className="weatherInformation">
       <div className="row">
         <div className="col-4">
           <h1 className="city" id="current-city">

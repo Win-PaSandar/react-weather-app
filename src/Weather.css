@@ -61,11 +61,11 @@ ul {
 }
 
 .units {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   position: relative;
   top: -32px;
-  margin-left: -5px;
+  margin-left: 0px;
 }
 
 .active {

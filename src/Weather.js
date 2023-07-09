@@ -51,10 +51,12 @@ export default function Weather() {
               class="today-weather-icon"
               id="icon"
             />
-            <span className="current-temperature" id="temperature"></span>
+            <span className="current-temperature" id="temperature">
+              86
+            </span>
             <span className="units">
               <a href="#" id="fahrenheit-link" className="active">
-                86° F
+                ° F
               </a>
             </span>
           </div>
@@ -69,7 +71,9 @@ export default function Weather() {
               Wind: <span id="wind"></span> 18 km/h
             </li>
             <li>
-              <span id="description"></span>Partly cloudy
+              <span className="description" id="description">
+                Partly cloudy
+              </span>
             </li>
           </ul>
         </div>

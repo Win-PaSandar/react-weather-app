@@ -5,19 +5,21 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Weather App</h1>
         <Weather />
-        <footer>
+      </div>
+      <footer className="footer">
+        <small>
           <a
-            href="https://github.com/Win-PaSandar/react-weather-app"
+            href="https://github.com/Win-PaSandar/weatherApp"
             target="_blank"
+            className="github-link"
             rel="noreferrer"
           >
             Open-source code
-          </a>{" "}
-          by Win-Pa Sandar
-        </footer>
-      </div>
+          </a>
+          {""} by <span className="coder"> Win-Pa Sandar</span>👩‍💻.
+        </small>
+      </footer>
     </div>
   );
 }

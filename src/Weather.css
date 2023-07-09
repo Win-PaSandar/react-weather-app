@@ -1,3 +1,12 @@
+.container {
+  background: #fffdfb;
+  padding: 30px 40px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 50px;
+  max-width: 900px;
+}
+
 .form {
   font-family: roboto;
   font-size: 16px;
@@ -12,9 +21,76 @@
   color: #0b5ed7;
 }
 
+.city {
+  color: #0b5ed7;
+  font-family: roboto;
+  font-weight: 900;
+  text-align: left;
+  margin: 0;
+}
+
 ul {
   list-style: none;
   font-family: roboto;
   padding: 0;
   margin: 0;
+}
+
+.today {
+  font-size: 20px;
+  color: #757a79;
+  text-align: left;
+}
+
+.current-temperature {
+  font-family: roboto;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.today-weather-icon {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: -13px;
+}
+
+.current-weather {
+  margin: 20px 30px;
+}
+
+.units {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  top: -32px;
+  margin-left: -5px;
+}
+
+.active {
+  color: #6c7854;
+  cursor: default;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.hwd {
+  font-size: 14px;
+  color: #6c7854;
+  text-align: left;
+  margin-left: 45%;
+}
+
+.description {
+  display: block;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.description::first-letter {
+  text-transform: capitalize;
 }

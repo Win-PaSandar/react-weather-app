@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
 
@@ -27,6 +26,7 @@ export default function WeatherInformation(props) {
               src={props.data.iconUrl}
               alt={props.data.description}
               class="today-weather-icon"
+              rel="noreferrer"
               id="icon"
             />
             <span className="current-temperature" id="temperature">

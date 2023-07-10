@@ -32,9 +32,9 @@ export default function WeatherInformation(props) {
               {Math.round(props.data.temperature)}
             </span>
             <span className="units">
-              <button href="#" id="fahrenheit-link" className="active">
+              <span href="#" id="fahrenheit-link" className="active">
                 °F
-              </button>
+              </span>
             </span>
           </div>
         </div>

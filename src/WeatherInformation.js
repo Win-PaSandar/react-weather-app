@@ -22,13 +22,11 @@ export default function WeatherInformation(props) {
 
         <div className="col-4">
           <div className="current-weather">
-            <img
+            <span>
               src={props.data.iconUrl}
               alt={props.data.description}
-              class="today-weather-icon"
-              rel="noreferrer"
-              id="icon"
-            />
+              class="today-weather-icon" id="icon"
+            </span>
             <span className="current-temperature" id="temperature">
               {Math.round(props.data.temperature)}
             </span>

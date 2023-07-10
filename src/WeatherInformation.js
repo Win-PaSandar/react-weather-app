@@ -22,18 +22,19 @@ export default function WeatherInformation(props) {
 
         <div className="col-4">
           <div className="current-weather">
-            <span>
+            <img
               src={props.data.iconUrl}
               alt={props.data.description}
-              class="today-weather-icon" id="icon"
-            </span>
+              class="today-weather-icon"
+              id="icon"
+            />
             <span className="current-temperature" id="temperature">
               {Math.round(props.data.temperature)}
             </span>
             <span className="units">
-              <a href="#" id="fahrenheit-link" className="active">
+              <button href="#" id="fahrenheit-link" className="active">
                 °F
-              </a>
+              </button>
             </span>
           </div>
         </div>

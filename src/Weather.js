@@ -14,7 +14,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
-      iconUrl: response.data.condition.icon_url,
+      icon: response.data.condition.icon_url,
       city: response.data.city,
       date: new Date(response.data.time * 1000),
       time: new Date(response.data.time * 1000),
@@ -45,8 +45,8 @@ export default function Weather(props) {
               <input
                 type="text"
                 placeholder="Enter your city"
-                autofocus="on"
-                autocomplete="off"
+                autoFocus="on"
+                autoComplete="off"
                 className="form-control shadow-sm"
                 id="city-input"
                 onChange={handleCityChange}

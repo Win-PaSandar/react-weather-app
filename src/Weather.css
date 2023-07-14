@@ -48,8 +48,9 @@ ul {
 
 .current-temperature {
   font-family: roboto;
-  font-size: 52px;
-  font-weight: 600;
+  font-size: 58px;
+  color: rgb(56, 55, 55);
+  font-weight: 800;
   line-height: 1;
   margin-left: 10px;
 }
@@ -85,7 +86,7 @@ a:link {
 
 .description {
   display: block;
-  color: black;
+  color: #0b5ed7;
   font-weight: 600;
   font-size: 16px;
 }

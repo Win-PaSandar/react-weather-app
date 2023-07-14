@@ -2,9 +2,9 @@ import React from "react";
 
 export default function WeatherTemperature(props) {
   return (
-    <div calssName="weatherTemperature">
+    <div className="weatherTemperature ">
       <span className="current-temperature" id="temperature">
-        {Math.round(props.data.temperature)}
+        {Math.round(props.fahrenheit)}
       </span>
 
       <span className="units">

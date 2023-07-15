@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./WeatherForecast.css";
-import WeatherIcon from "./WeatherIcon";
 import axios from "axios";
+import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
@@ -16,25 +16,16 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="row">
           <div className="col-2">
-            <div className="forecastBox">
-              <div className="forecastDay">{forecast[0].dt}</div>
-
-              <WeatherIcon code={forecast[0].weather[0].icon} size={36} />
-
-              <div className="weatherForecastTemperatures">
-                <span className="forecastMax">{forecast[0].temp.max}°</span>
-                <span className="forecastMin">{forecast[0].temp.min}°</span>
-              </div>
-            </div>
+            <WeatherForecastDay data={forecast[0]} />
           </div>
         </div>
       </div>
     );
   } else {
-    let apiKey = "0efb4fc16a9ed98dc0b3aafd8491d6ad";
-    let latitude = props.coordinates.lat;
-    let longitude = props.coordinates.lon;
-    let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    let apiKey = "1acbot392864443e815e617a5f81390f";
+    let latitude = props.coordinates.latitude;
+    let longitude = props.coordinates.longitude;
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
 
     return null;

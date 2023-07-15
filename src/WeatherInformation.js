@@ -13,10 +13,10 @@ export default function WeatherInformation(props) {
             {props.data.city}
           </h1>
           <ul className="today">
-            <li className="current-date">
+            <li className="currentDate">
               <FormattedDate date={props.data.date} />
             </li>
-            <li className="current-time">
+            <li className="currentTime">
               <FormattedTime time={props.data.time} />
             </li>
           </ul>
@@ -24,7 +24,7 @@ export default function WeatherInformation(props) {
 
         <div className="col-4">
           <div className="todayWeatherIcon ">
-            <WeatherIcon code={props.data.icon} />
+            <WeatherIcon code={props.data.icon} size={60} />
           </div>
           <WeatherTemperature celsius={props.data.temperature} />
         </div>

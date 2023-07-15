@@ -10,13 +10,13 @@ body {
   text-align: center;
 }
 
-.github-link {
+.gitHubLink {
   text-decoration: none;
   color: rgb(22, 22, 22);
   font-weight: bolder;
 }
 
-.github-link:hover {
+.gitHubLink:hover {
   text-decoration: underline;
   cursor: pointer;
 }

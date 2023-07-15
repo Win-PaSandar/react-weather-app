@@ -23,10 +23,12 @@ export default function WeatherInformation(props) {
         </div>
 
         <div className="col-4">
-          <div className="todayWeatherIcon ">
-            <WeatherIcon code={props.data.icon} size={60} />
+          <div className="todayWeather">
+            <div className="todayWeatherIcon">
+              <WeatherIcon code={props.data.icon} size={60} />
+            </div>
+            <WeatherTemperature celsius={props.data.temperature} />
           </div>
-          <WeatherTemperature celsius={props.data.temperature} />
         </div>
 
         <div className="col-4">

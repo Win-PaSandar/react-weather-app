@@ -1,0 +1,52 @@
+.forecastBox {
+  background: linear-gradient(
+    178deg,
+    rgba(201, 234, 252, 0.51) 14.9%,
+    rgba(139, 192, 216, 0.73) 80%
+  );
+  border-radius: 20px;
+  padding: 20px 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: roboto;
+  width: 120px;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.forecastBox:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    179.4deg,
+    rgb(253, 240, 233) 2.2%,
+    rgb(255, 194, 203) 96.2%
+  );
+}
+
+.forecastDay {
+  color: #757a79;
+  font-weight: 600;
+}
+
+.forecastIcon {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.forecastMax {
+  color: black;
+  font-weight: 500;
+}
+
+.forecastMin {
+  color: black;
+  opacity: 0.5;
+}
+
+.forecastIcon {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  margin-left: 10px;
+}

@@ -12,7 +12,7 @@ export default function App() {
           <a
             href="https://github.com/Win-PaSandar/weatherApp"
             target="_blank"
-            className="github-link"
+            className="githubLink"
             rel="noreferrer"
           >
             Open-source code

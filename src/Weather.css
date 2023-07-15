@@ -59,7 +59,7 @@ ul {
 
 .weatherTemperature {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .units {
@@ -68,11 +68,6 @@ ul {
   position: relative;
   top: -32px;
   margin-left: 0px;
-}
-
-.active {
-  color: #6c7854;
-  cursor: default;
 }
 
 a:link {

@@ -50,7 +50,6 @@ export default function Weather(props) {
                 autoFocus="on"
                 autoComplete="off"
                 className="form-control shadow-sm"
-                id="city-input"
                 onChange={handleCityChange}
               />
             </div>

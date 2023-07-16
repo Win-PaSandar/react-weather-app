@@ -8,17 +8,18 @@ export default function App() {
         <Weather defaultCity="Yangon" />
       </div>
       <footer className="footer">
-        <small>
+        <p>
+          This project was coded by{" "}
+          <span className="coder">Win-Pa Sandar 👩‍💻</span> and is {""}
           <a
             href="https://github.com/Win-PaSandar/weatherApp"
             target="_blank"
             className="gitHubLink"
             rel="noreferrer"
           >
-            Open-source code
+            open-sourced on GitHub.
           </a>
-          {""} by <span className="coder"> Win-Pa Sandar</span>👩‍💻.
-        </small>
+        </p>
       </footer>
     </div>
   );

@@ -5,15 +5,15 @@ body {
 .footer {
   margin: 0 auto;
   padding: 0;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   text-align: center;
 }
 
 .gitHubLink {
   text-decoration: none;
   color: rgb(22, 22, 22);
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .gitHubLink:hover {
@@ -22,6 +22,6 @@ body {
 }
 
 .coder {
-  color: #c46964;
+  color: #a1186d;
   font-weight: bold;
 }

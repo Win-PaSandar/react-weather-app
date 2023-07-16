@@ -25,7 +25,7 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 667px) {
   .footer {
     font-size: 12px;
   }

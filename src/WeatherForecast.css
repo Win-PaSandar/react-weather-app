@@ -44,3 +44,13 @@
   color: black;
   opacity: 0.5;
 }
+
+@media (max-width: 667px) {
+  .forecastBox {
+    text-align: center;
+    font-size: 14px;
+    width: 80px;
+    height: 100px;
+    margin-top: 20px;
+  }
+}

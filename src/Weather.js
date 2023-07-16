@@ -41,34 +41,35 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="weather">
-        <form className="form" id="search-form" onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-4">
-              <input
-                type="text"
-                placeholder="Enter your city"
-                autoFocus="on"
-                autoComplete="off"
-                className="form-control shadow-sm"
-                onChange={handleCityChange}
-              />
-            </div>
-            <div className="col-2">
-              <input
-                type="submit"
-                value="Search"
-                className="form-control btn btn-primary shadow-sm"
-              />
-            </div>
-            <div className="col-6">
-              <span className="find">
-                <i className="fa-regular fa-hand-point-left hand"></i> Find your
-                WEATHER HERE
-              </span>
-            </div>
+        <form
+          className="d-flex justify-content-between form"
+          onSubmit={handleSubmit}
+        >
+          <div className="col-4">
+            <input
+              type="text"
+              placeholder="Enter your city"
+              autoFocus="on"
+              autoComplete="off"
+              className="form-control shadow-sm"
+              onChange={handleCityChange}
+            />
+          </div>
+          <div className="col-2">
+            <input
+              type="submit"
+              value="Search"
+              className="form-control btn btn-primary shadow-sm"
+            />
+          </div>
+
+          <div className=" col-6">
+            <span className="find">
+              <i className="fa-regular fa-hand-point-left hand"></i> Find your
+              WEATHER HERE
+            </span>
           </div>
         </form>
-
         <WeatherInformation data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>

@@ -22,7 +22,7 @@ export default function WeatherForecastDay(props) {
   }
 
   return (
-    <div className="weatherForecastDay">
+    <div className="d-flex justify-content-around align-content-between weatherForecastDay">
       <div className="forecastBox">
         <div className="forecastDay">{day()}</div>
 
